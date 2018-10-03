@@ -88,7 +88,7 @@
                                 foreach ($data as $result){
                                 $count_data++;
                                 ?>
-                                <tr>
+                                <tr id="row_{{ $result->type_code }}" >
                                     <th scope="row">
                                         {{ $count_data }}
                                     </th>
@@ -97,7 +97,7 @@
                                         <input type="text"  readonly value="{{ $result->type_title }}" onkeyup="Edit('{{ $result->type_code }}')" ondblclick="$(this).removeAttr('readonly')" class="form-control ip_{{ $result->type_code }}" />
                                     </td>
                                     <td>
-                                        <button class="btn btn-danger" >
+                                        <button class="btn btn-danger" onclick="deletedata('{{ $result->type_code }}','row_{{ $result->type_code }}','null','Type')" >
                                             {{ trans("tool.delete") }}
                                         </button>
                                     </td>

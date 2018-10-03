@@ -86,8 +86,8 @@ class CardBEController extends BaseController
 
         //exit();
 
-        echo $group ."<br>";
-        echo $product ."<br>";
+        //echo $group ."<br>";
+        //echo $product ."<br>";
 
        if(count($group_data) != 0 ){
            $group_code = $group_data[0]->type_code;
@@ -96,8 +96,8 @@ class CardBEController extends BaseController
        if(count($product_data) != 0 ){
            $product_code = $product_data[0]->type_code;
        }
-        echo $group_code ."<br>";
-        echo $product_code ."<br>";
+        //echo $group_code ."<br>";
+        //echo $product_code ."<br>";
 
 
 

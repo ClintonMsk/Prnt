@@ -345,7 +345,7 @@ function deletedata(code,rowtb,folder,deltype){
         success: function (data) {
             console.log(data);
             if(data == 1){
-                toastr.success($(".success_title").val(),$(".success_detail").val());
+                toastr.success($(".success_del_text").val(),$(".success_detail").val());
                 $("#"+rowtb).fadeOut(1000);
             }else{
             }

@@ -168,34 +168,11 @@ class FormController extends BaseController
                 self::DelFolder($Path);
                 echo 1;
                 break;
-            case "Group":
-
-                $data = Query::selectDataCon("honda_activity_group","group_code","$code","=");
-
-                foreach ($data as $result){
-                    $code_g = $result->group_code;
-
-                    $data_ac = Query::selectDataCon("honda_activity","activity_code_group","$code_g","=");
-
-                    foreach ($data_ac as $result_activity){
-                        $code_activity = $result_activity->activity_code;
-                        $folder = $result_activity->activity_folder;
-
-                        Query::DeleteData("honda_activity","activity_code","$code_activity");
-                        Query::DeleteData("honda_gallery","gal_code_content","$code_activity");
-                        Query::DeleteData("honda_video","video_code_content","$code_activity");
-                        Query::DeleteData("honda_document","doc_code_content","$code_activity");
-                        $Path = "Media/Activity/".$folder;
-                        self::DelFolder($Path);
-
-
-                    }
-
-
-                }
-                Query::DeleteData("honda_activity_group","group_code","$code");
+            case "Type":
+                Query::DeleteData("print_type","type_code","$code");
                 echo 1;
                 break;
+
 
         }
 

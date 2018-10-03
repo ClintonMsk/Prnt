@@ -97,6 +97,8 @@ function deletedata(code,rowtb,folder,deltype){
 
 
 }
+
+
 function Listmanage(link) {
     var sortby = $("#sortby").val();
     var orderby = $("#orderby").val();
