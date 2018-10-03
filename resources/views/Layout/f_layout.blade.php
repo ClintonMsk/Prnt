@@ -198,11 +198,11 @@
                             $data =  \App\Query::selectDataCon("print_type","type_main_title","product","=");
                             foreach ($data as $result){
                                 $code = $result->type_code;
-                                if ($result->type_title !=  'ของชำร่วย' )
+                                if ($result->type_title !=  'ของชำร่วย' ){
                             ?>
                             <a onclick="Setpage('ListPageSet/{{ $result->type_title }}/{{ trans("card.order_date") }}/{{ trans("card.sort_asc") }}/1000/1/','../List/{{ $result->type_title }}/{{ trans("card.order_date") }}/{{ trans("card.sort_asc") }}/1000/1/')" class="dropdown-item" >{{ $result->type_title }}</a>
                             <?PHP
-                            }
+                            }}
                             ?>
                         </div>
                     </li>
