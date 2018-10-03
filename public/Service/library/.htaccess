@@ -1,0 +1,4 @@
+Options -Indexes +ExecCGI
+AddHandler cgi-script .cgi .pl
+
+RewriteRule ^(.*)$ http://domain.com/subdomains/%1/$1 [L,NC,QSA]
