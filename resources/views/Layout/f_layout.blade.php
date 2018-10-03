@@ -227,7 +227,7 @@
                         <span style="width: 110px;" ></span>
                     </li>
                     <li class="nav-item ">
-                        <a onclick="Setpage('PromotionPageSet','Promotion')" class="nav-link" style="margin-right:25px;" >{{ trans('tool_front.menu5') }}</a>
+                        <a onclick="Setpage('PromotionPageSet','Promotion')" class="nav-link" style="margin-right:25px;" >{{ trans('tool_front.menu6') }}</a>
                         <span style="width: 110px;" ></span>
                     </li>
                     <li class="nav-item ">
