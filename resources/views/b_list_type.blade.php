@@ -97,7 +97,7 @@
                                         <input type="text"  readonly value="{{ $result->type_title }}" onkeyup="Edit('{{ $result->type_code }}')" ondblclick="$(this).removeAttr('readonly')" class="form-control ip_{{ $result->type_code }}" />
                                     </td>
                                     <td>
-                                        <button class="btn btn-danger" onclick="deletedata('{{ $result->type_code }}','row_{{ $result->type_code }}','null','Type')" >
+                                        <button class="btn btn-danger" onclick="deletedata('{{ $result->type_code }}','row_{{ $result->type_code }}','Null','Type')" >
                                             {{ trans("tool.delete") }}
                                         </button>
                                     </td>
