@@ -126,6 +126,21 @@ class FEController extends BaseController
             ->with("image",'/image/logo.jpg')
             ;
     }
+    public function RoutePromotion(\Illuminate\Http\Request $request){
+
+       $setpage = "PromotionPageSet";
+
+        return View("Layout.f_layout")
+            ->with("page",$setpage)
+            ->with("pages","")
+            ->with("load_detail",'false')
+            ->with("code","false")
+            ->with("load_detail",'false')
+            ->with("title",trans("tool.SystemTitleName"))
+            ->with("description",trans("tool.description") )
+            ->with("image",'/image/logo.jpg')
+            ;
+    }
     public function RouteSetAbout(\Illuminate\Http\Request $request){
 
        $setpage = "AboutPageSet";
@@ -591,6 +606,12 @@ class FEController extends BaseController
 
         return View("f_envelope")
         ;
+
+    }
+    public function Promotion(\Illuminate\Http\Request $request){
+
+        return View("f_promotion")
+            ;
 
     }
     public function About(\Illuminate\Http\Request $request){

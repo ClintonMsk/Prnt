@@ -45,6 +45,7 @@ Route::get('ListPageSet/{product}/{orderby}/{sortby}/{limit}/{page}/{search?}', 
 Route::get('ListPageSets/{product}/{orderby}/{sortby}/{limit}/{page}/{search?}', 'FEController@Lists');
 Route::get('DetailPageSet/{code}', 'FEController@Detail');
 Route::get('EnvelopePageSet', 'FEController@Envelope');
+Route::get('PromotionPageSet', 'FEController@Promotion');
 Route::get('AboutPageSet', 'FEController@About');
 /*FrontLoad*/
 Auth::routes();

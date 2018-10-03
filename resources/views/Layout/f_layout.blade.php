@@ -206,6 +206,10 @@
                             ?>
                         </div>
                     </li>
+                    <li class="nav-item ">
+                        <a onclick="Setpage('ListPageSet/{{ trans('tool_front.menu5') }}/{{ trans("card.order_date") }}/{{ trans("card.sort_asc") }}/1000/1/','../List/{{ trans('tool_front.menu5') }}/{{ trans("card.order_date") }}/{{ trans("card.sort_asc") }}/1000/1/')"  class="nav-link" style="margin-right:25px;" >{{ trans('tool_front.menu5') }}</a>
+                        <span style="width: 110px;" ></span>
+                    </li>
 
                 </ul>
                 <!-- Links -->
@@ -217,12 +221,13 @@
 
                 <!-- Links -->
                 <ul class="navbar-nav">
+
                     <li class="nav-item ">
-                        <a onclick="Setpage('ListPageSet/{{ trans('tool_front.menu5') }}/{{ trans("card.order_date") }}/{{ trans("card.sort_asc") }}/1000/1/','../List/{{ trans('tool_front.menu5') }}/{{ trans("card.order_date") }}/{{ trans("card.sort_asc") }}/1000/1/')"  class="nav-link" style="margin-right:25px;" >{{ trans('tool_front.menu5') }}</a>
+                        <a onclick="Setpage('EnvelopePageSet','Envelope')" class="nav-link" style="margin-right:25px;" >{{ trans('tool_front.menu3') }}</a>
                         <span style="width: 110px;" ></span>
                     </li>
                     <li class="nav-item ">
-                        <a onclick="Setpage('EnvelopePageSet','Envelope')" class="nav-link" style="margin-right:25px;" >{{ trans('tool_front.menu4') }}</a>
+                        <a onclick="Setpage('PromotionPageSet','Promotion')" class="nav-link" style="margin-right:25px;" >{{ trans('tool_front.menu5') }}</a>
                         <span style="width: 110px;" ></span>
                     </li>
                     <li class="nav-item ">
