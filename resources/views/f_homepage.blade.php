@@ -48,7 +48,8 @@
         <div align="center" style="padding-top:5vh;" >
             <img src="{{ URL::to('/') }}/image/objective.jpg" class="img-fluid" style="width: 100% !important;" >
             <img src="{{ URL::to('/') }}/image/Howto_Buy.jpg" class="img-fluid" style="width: 100% !important;" >
-            <img src="{{ URL::to('/') }}/image/product.jpg" class="img-fluid" style="width: 100% !important;" >
+
+            <img  onclick="Setpage('ListPageSet/ผลงานการ์ดของลูกค้า/{{ trans("card.order_date") }}/{{ trans("card.sort_asc") }}/1000/1/','../List/ผลงานการ์ดของลูกค้า/{{ trans("card.order_date") }}/{{ trans("card.sort_asc") }}/1000/1/')"  src="{{ URL::to('/') }}/image/product.jpg" class="img-fluid" style="width: 100% !important;cursor: pointer;" >
         </div>
         <h2 class="text-center" style="padding-top: 5vmin;" >{{ trans("tool.last_card") }}</h2>
         <div class="row" style="padding: 10vmin;padding-top: 0;padding-bottom: 0;" >
@@ -74,6 +75,6 @@
 
         </div>
         <div class="container-fluid" style="background: #FFFFFF">
-            <img src="{{ URL::to('/') }}/image/contact.jpg" class="img-fluid" style="width: 100% !important;" >
+            <img onclick="Setpage('AboutPageSet','About')" src="{{ URL::to('/') }}/image/contact.jpg" class="img-fluid" style="width: 100% !important;cursor: pointer;" >
         </div>
     </div>

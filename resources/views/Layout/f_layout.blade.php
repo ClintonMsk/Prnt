@@ -172,7 +172,7 @@
 <header style="height: 0px;" >
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark nav_color " style="z-index: 2500;" >
+    <nav class="navbar navbar-expand-lg navbar-dark nav_color " style="z-index: 3000;" >
 
         <div class="container">
 

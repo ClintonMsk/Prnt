@@ -15,6 +15,7 @@ return [
     "menu3-2"=>"List Mentor",
     "menu4"=>"Menu4",
     "menu4-1"=>"InboxList",
+    "menu5"=>"ออกจากระบบ",
     "manage"=>"การจัดการ",
     "title"=>"ชื่อ",
     "all"=>"ทั้งหมด",
@@ -63,4 +64,8 @@ return [
     "card_add"=>"เพิ่มการ์ด",
     "type_list"=>"จัดการประเภท",
     /*Route*/
+
+    /*Login*/
+    "username"=>"ชื่อผู้ใช้",
+    "password"=>"รหัสผ่า่น"
 ];

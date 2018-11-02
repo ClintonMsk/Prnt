@@ -85,11 +85,20 @@
                     </li>
                 </ul>
             </li>
+            <hr>
+            <li>
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a href="{{ URL::to('/') }}/Logout" class="collapsible-header waves-effect arrow-r">
+                            <i class="fa fa-chevron-right"></i>{{ trans("tool.menu5") }}</a>
+                    </li>
+                </ul>
+            </li>
         </ul>
     </div>
     <!--/. Sidebar navigation -->
     <!-- /.Navbar -->
-    <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav">
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav"  >
         <!-- SideNav slide-out button -->
         <div class="float-left">
             <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars"></i></a>
